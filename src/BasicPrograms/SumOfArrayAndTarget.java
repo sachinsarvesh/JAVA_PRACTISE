@@ -1,4 +1,4 @@
-package LeetCode;
+package BasicPrograms;
 /*
 **** Problem Statement ****
 We will be given two inputs.
