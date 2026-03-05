@@ -1,5 +1,7 @@
 package BasicPrograms;
 
+// Defines the multiple ways to obtain user input
+
 import java.io.*;
 
 import java.util.Scanner;
