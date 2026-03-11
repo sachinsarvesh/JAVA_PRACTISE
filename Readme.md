@@ -5,7 +5,7 @@
     *   git add . 
     *   git commit -m "First commit"
     *   git branch -M main 
-    *   git add remote origin https://github.com/sachinsarvesh/JAVA_PRACTISE.git
+    *   git remote add origin https://github.com/sachinsarvesh/JAVA_PRACTISE.git
     *   git push -u origin main 
 
 - **To remove IntelliJ files**
