@@ -25,20 +25,7 @@ public class SumOfArrayAndTarget {
         System.out.println(Arrays.toString(twoSumAndTarget(nums, target)));
     }
 
-    public static int[] twoSumAndTarget(int[] nums, int target){
-        /*
-        ****  Normal solution ****
-        int arr_length = arr_sample.length;
-        for(int itr1 = 0; itr1 < arr_length;itr1++){
-           for(int itr2 = itr1 + 1; itr2 <arr_length ; itr2++){
-               int sum_of_two_itrs = arr_sample[itr1] + arr_sample[itr2];
-               if(sum_of_two_itrs == target_value){
-                   System.out.println("Found the indexes " + itr1 + " , " + itr2);
-                   return new int[]{itr1,itr2 };
-               }
-           }
-        }
-         */
+    private static int[] twoSumAndTarget(int[] nums, int target) {
         // Optimised Solution
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int itr1 = 0; itr1 < nums.length; itr1++){
@@ -49,5 +36,21 @@ public class SumOfArrayAndTarget {
             map.put(nums[itr1],itr1);
         }
         return new int[]{};
+    }
+
+    public static int[] twoSumAndTarget_brute(int[] nums, int target) {
+
+        //  ****  Normal solution ****
+        int arr_length = nums.length;
+        for (int itr1 = 0; itr1 < arr_length; itr1++) {
+            for (int itr2 = itr1 + 1; itr2 < arr_length; itr2++) {
+                int sum_of_two_itrs = nums[itr1] + nums[itr2];
+                if (sum_of_two_itrs == target) {
+                    System.out.println("Found the indexes " + itr1 + " , " + itr2);
+                    return new int[]{itr1, itr2};
+                }
+            }
+        }
+        return new int[] {};
     }
 }

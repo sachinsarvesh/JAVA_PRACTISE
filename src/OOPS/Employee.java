@@ -11,6 +11,7 @@ public class Employee extends EmployeeDetails {
     public String getName(){
         return name;
     }
+
     public void setSalary(int salary){
         if(salary > 0)
             this.salary = salary;
